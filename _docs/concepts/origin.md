@@ -41,7 +41,7 @@ seem that the only thing needed is to rotate the XR Origin; however that almost
 never works. Consider the following where the XR Origin is simply rotated:
 ![Origin Rotation Only]({{ site.url }}/assets/img/origin/origin_rotation_only.png)
 
-The center 0/0/0 of the XR Origin did not move. As player was not standing at 
+The center 0/0/0 of the XR Origin did not move. As the player was not standing at 
 the center of the XR Origin, they were moved when the origin rotated - similar to
 standing on a rotating carousel. Correctly rotating the player to face in a 
 different direction involves having to translate the XR Origin in such a way that
@@ -53,7 +53,7 @@ the global position of the player (the XR Camera) does not move:
 Godot XR Tools does most of the hard work in helping you with these calculations.
 
 In XR Tools a PlayerBody node is added to the Origin node that contains all the 
-logic to estimate where the players body must be. Currently this logic assumes the 
+logic to estimate where the players body must be. Currently, this logic assumes the 
 player is always facing the direction they are looking at and that the player is
 standing up.
 
